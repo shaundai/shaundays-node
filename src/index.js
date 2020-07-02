@@ -1,13 +1,14 @@
 require("dotenv").config();
+//const port = process.env.PORT || 3000;
+const weatherApi = process.env.WEATHER_API_KEY;
 
 const express = require('express');
 const app = express();
 const axios = require('axios');
 
-const apiKey = '678da8f7dbcf7a5d50a3533a310238d1'
-
 app.listen(4000, () => {
     console.log('server is running on port 4000')
+    console.log(weatherApi)
 })
 
 
@@ -27,5 +28,5 @@ app.get('/', (req, res) => {
 })
 
 const getWeather = (lat, long) => {
-        return axios.get(`https://api.darksky.net/forecast/${API_KEY}/${lat},${long}`)
+        return axios.get(`https://api.darksky.net/forecast/${weatherApi}/${lat},${long}`)
 }
