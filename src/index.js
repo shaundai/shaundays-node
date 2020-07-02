@@ -24,6 +24,7 @@ app.get('/weather/:lat,:long', (req, res) => {
 
 app.get('/', (req, res) => {
     res.send('weatherApi')
+    res.send(weatherApi)
 })
 
 const getWeather = (lat, long) => {
