@@ -27,5 +27,5 @@ app.get('/', (req, res) => {
 })
 
 const getWeather = (lat, long) => {
-        return axios.get(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${weatherApi}/${lat},${long}`)
+        return axios.get(`https://api.darksky.net/forecast/${weatherApi}/${lat},${long}`)
 }
