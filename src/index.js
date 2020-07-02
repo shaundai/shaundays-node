@@ -23,7 +23,6 @@ app.get('/weather/:lat,:long', (req, res) => {
 
 app.get('/', (req, res) => {
     res.send('hey yall')
-    console.log('fish')
 })
 
 const getWeather = (lat, long) => {
