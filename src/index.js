@@ -8,6 +8,7 @@ const axios = require('axios');
 
 app.listen(port, () => {
     console.log(`server is running on port ${port}`)
+    console.log(weatherApi)
 })
 
 
@@ -23,7 +24,7 @@ app.get('/weather/:lat,:long', (req, res) => {
 
 app.get('/', (req, res) => {
     res.send(weatherApi)
-    console.log(weatherApi)
+    res.send('weatherApi')
 })
 
 const getWeather = (lat, long) => {
