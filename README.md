@@ -1,6 +1,6 @@
 ## ShaunDays Back End
 
-#### Node Back End for ShaunDays React App
+#### ShaunDays Back End
 
 Node back end for ShaunDays React App.
 
@@ -9,11 +9,11 @@ Node back end for ShaunDays React App.
 See live project on Surge here: http://shaundays-weather.surge.sh/
 
 ## Project Screen Shots
-![Main screen screenshot](./public/screenshot1.png?raw=true "Main Screen")
+![Main screen screenshot](./src/images/screenshot1.png?raw=true "Main Screen")
 
 Main Weather Screen
 
-![Search for weather screenshot](./public/screenshot2.png?raw=true "Search for misspelled city")
+![Search for weather screenshot](./src/images/screenshot2.png?raw=true "Search for misspelled city")
 
 Search for misspelled city (user) brings up corrected search results
 
